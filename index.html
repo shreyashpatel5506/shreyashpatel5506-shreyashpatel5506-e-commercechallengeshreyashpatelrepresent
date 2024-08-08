@@ -1,0 +1,110 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerse website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="index.js" defer="defer"></script>
+    <script src="jquery.txt"></script>  
+
+</head>
+<body>
+    <nav class="nav1">
+        <div class="menu" id="burger" onclick="menu()"><img src="icon-menu.svg" id="bu"></div>
+        <div class="logoandmenu">
+            <span class="name">sneakers</span>
+            <span class="menu">
+                <ul id="ulm" class="ulm1">
+                    <li class="list">Collections</li>
+                    <li class="list">Men</li>
+                    <li class="list">Women</li>
+                    <li class="list">About</li>
+                    <li class="list">Contact</li>
+                </ul>
+            </span>
+        </div>
+            <div class="orderandavtar">
+                <span style="display: flex;">
+                <button class="order" id="display1" onclick="cart()"><img alt="shoap" src="icon-cart.svg">
+                </button><sup id="number"></sup></span>
+                <span class="avtar" style="margin-bottom: 10px;"><img src="image-avatar.png" alt="avtar"></span>
+            </div>
+    </nav>
+    <div class="cartdetail" id="detail">
+        <div id="text"><span>Cart</span></div>
+        <div class="alldetail">
+            <div><img src="image-product-1.jpg" alt="product"></div>
+            <div class="detail">
+                <span class="name">Fail Limited Edition sneakers</span>
+                <span class="price">$125.00*<span id="number1">1</span><span style="margin-right:0;color:black">$</span> <span id="total">125.00</span></span>
+            </div>
+            <div class="delete" id="del"><img src="icon-delete.svg" alt="delete"></div>
+        </div>
+        <div class="checkout">Checkout</div>
+    </div>
+   
+    <div class="container">
+        <div class="imagepart">
+            <div class="mainimage">
+                <img class="image" src="image-product-1.jpg" alt="image" onclick="lightbox(1)">
+                <img class="image" src="image-product-2.jpg" alt="image" onclick="lightbox(2)">
+                <img class="image" src="image-product-3.jpg" alt="image" onclick="lightbox(3)">
+                <img class="image" src="image-product-4.jpg" alt="image" onclick="lightbox(4)">
+            </div>
+
+            <div class="dots">
+                <span class="dot" onclick="now(1)"><img src="image-product-1-thumbnail.jpg" alt="dot"></span>
+                <span class="dot" onclick="now(2)"><img src="image-product-2-thumbnail.jpg" alt="dot"></span>
+                <span class="dot" onclick="now(3)"><img src="image-product-3-thumbnail.jpg" alt="dot"></span>
+                <span class="dot" onclick="now(4)"><img src="image-product-4-thumbnail.jpg" alt="dot"></span>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="imagepart1">
+                <span class="close" onclick="closelightbox()"><img src="icon-close.svg" onclick="closelightbox()"></span>
+            <div class="mainimage1">
+                <img class="image1" src="image-product-1.jpg" alt="image">
+                <img class="image1" src="image-product-2.jpg" alt="image">
+                <img class="image1" src="image-product-3.jpg" alt="image">
+                <img class="image1" src="image-product-4.jpg" alt="image">
+            </div>
+            
+            <div class="dots1">
+                <span class="dot1" onclick="box(1)"><img src="image-product-1-thumbnail.jpg" alt="dot"></span>
+                <span class="dot1" onclick="box(2)"><img src="image-product-2-thumbnail.jpg" alt="dot"></span>
+                <span class="dot1" onclick="box(3)"><img src="image-product-3-thumbnail.jpg" alt="dot"></span>
+                <span class="dot1" onclick="box(4)"><img src="image-product-4-thumbnail.jpg" alt="dot"></span>
+            </div>
+            <div class="line" id="upnext">
+                <span class="prev" onclick="plusside(-1)"><img src="icon-previous.svg" alt="prev"></span>
+                <span class="next" onclick="plusside(1)"><img src="icon-next.svg" alt="next"></span>
+            </div>
+        </div>
+        </div>
+        <div class="textpart">
+            <span class="coname">sneaker company</span>
+            <span class="productname">Fall Limited Edition Sneakers</span>
+            <span class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</span>
+            <span class="price_all">
+                <span class="price">$125.00</span><span class="disccount">50%</span>
+            </span>
+            <span class="eprice">$250.00</span>
+            <span class="rowpr">
+                <div class="order">
+                    <button id=min><img src="icon-minus.svg"></button>
+                    <button id="val">0</button>  
+                      <button  id="max"><img src="icon-plus.svg"></button>
+                      </div>
+            <span class="cart"><button class="carts" id="cart"><img src="icon-cart.svg" alt="cart">Add to cart</button></span>
+            </span>
+        </div>
+
+        </div>
+
+
+</body>
+</html>
